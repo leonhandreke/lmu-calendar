@@ -8,9 +8,9 @@ parameters.
 
 ## Usage
 
-I run a public instance of this service at `http://lmu-calendar.ndreke.de`. The
+I run a public instance of this service at `https://lmu-calendar.ndreke.de`. The
 URL for your calendar is constructed as follows:
-`http://lmu-calendar.ndreke.de/stundenplan/<semester_id>?username=<myusername>&password=<mypassword>`.
+`https://lmu-calendar.ndreke.de/stundenplan/<semester_id>?username=<myusername>&password=<mypassword>`.
 `semester_id` is the year concatenated with `1` for Sommersemester and `2` for
 Wintersemester. So e.g. `20172` means Wintersemester 2017/2018, `20181` means
 Sommersemester 2018.
@@ -21,10 +21,9 @@ service.
 
 ## Security
 
-Transmitting your username and password through GET parameters in an
-unencrypted connection to an untrusted server (i.e. mine) is obviously really
-insecure. Deal with it and consider your account compromised. I'll do my best
-to keep your credentials private though (which doesn't mean a lot).
+Transmitting your username and password to an untrusted server (i.e. mine) is
+obviously a bad idea. Deal with it and consider your account compromised. I'll
+do my best to keep your credentials private though (which doesn't mean a lot).
 
 ## License
 
