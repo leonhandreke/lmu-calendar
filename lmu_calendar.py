@@ -28,4 +28,7 @@ def get_stundenplan(semester_id):
         return '', 204  # No Content
 
     ical_response = session.get(ical_download_buttons[0].get("href"))
-    return ical_response.content
+
+    response = flask.Response(ical_response.content)
+    response.headers["Cache-Control"] = "max-age=7200, private, must-revalidate"
+    return response
